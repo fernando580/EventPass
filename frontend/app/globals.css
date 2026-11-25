@@ -1,0 +1,73 @@
+
+@import "tailwindcss";
+
+:root {
+  --background: #0b1220;
+  --foreground: #f1f5f9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b1220;
+  color: #f1f5f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formularios */
+input,
+select,
+textarea {
+  background-color: #17243a;
+  color: #ffffff;
+  border: 1px solid #344761;
+  border-radius: 9px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a5b4c8;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #2583ff;
+  outline-offset: 1px;
+}
+
+/* Tablas */
+table {
+  color: #eaf2ff;
+}
+
+thead {
+  background-color: #17243a;
+}
+
+tbody tr {
+  border-bottom: 1px solid #27364c;
+}
+
+tbody tr:hover {
+  background-color: #192b46;
+}
+
+/* Transiciones */
+button,
+a {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
